@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+build/
+dist/
+
+# Generated charts (created at runtime)
+output/*
+!output/.gitkeep
+
+# Local API response cache
+.weather_cache/
+.pytest_cache/
+.mypy_cache/

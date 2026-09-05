@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "weather-insights-cli"
+version = "0.1.0"
+description = "CLI weather/climate data analyzer using pandas, matplotlib, and the free Open-Meteo API (no API key required)."
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+    { name = "Muhammad Aoun Shabbir", email = "kauzsh36@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = [
+    "requests>=2.31",
+    "pandas>=2.0",
+    "matplotlib>=3.7",
+    "click>=8.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/m-aoun/weather-insights-cli"
+
+[project.scripts]
+weather-insights = "weather_insights.cli:main"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+]
+
+[tool.setuptools.packages.find]
+include = ["weather_insights*"]
