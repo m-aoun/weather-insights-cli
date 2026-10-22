@@ -193,6 +193,10 @@ tests/
   ambiguous names (e.g. a small town sharing a name with a larger one)
   may resolve to the more prominent location.
 
+## License
+
+MIT — see [LICENSE](LICENSE).
+
 ## Author
 
 Muhammad Aoun Shabbir — [github.com/m-aoun](https://github.com/m-aoun)
